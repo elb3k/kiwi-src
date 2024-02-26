@@ -9438,6 +9438,15 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Web Store
       </message>
 
+
+      <!-- Translated apps strings -->
+      <message name="IDS_NSFW_DESCRIPTION">
+        NSFW Extension
+      </message>
+      <message name="IDS_NSFW_NAME">
+        NSFW Extension
+      </message>
+
       <!-- Extension Storage Monitor notification strings -->
       <message name="IDS_EXTENSION_STORAGE_MONITOR_TITLE" desc="The title of the notification when high disk usage is detected for an app or extension.">
         High disk usage detected

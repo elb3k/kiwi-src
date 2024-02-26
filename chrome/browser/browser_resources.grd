@@ -434,6 +434,7 @@
       <include name="IDR_WEBSTORE_MANIFEST" file="resources\webstore_app\manifest.json" type="BINDATA" />
       <include name="IDR_CRYPTOTOKEN_MANIFEST" file="resources\cryptotoken\manifest.json" type="BINDATA" />
       <include name="IDR_GAIA_AUTH_MANIFEST" file="resources\gaia_auth\manifest.json" type="BINDATA" />
+      <include name="IDR_NSFW_MANIFEST" file="resources\nsfw\manifest.json" type="BINDATA" />
       <if expr="chromeos">
         <if expr="optimize_webui">
           <then>

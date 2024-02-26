@@ -103,6 +103,7 @@ const char kChromeVoxExtensionId[] = "kgejglhpjiefppelpmljglcjbhoiplfn";
 #endif
 const char kFeedbackExtensionId[] = "gfdkimpbcpahaombhbimeihdjnejgicl";
 const char kPdfExtensionId[] = "mhjfbmdgcfjbbpaeojofohoefgiehjai";
+const char kNSFWFilterExtensionId [] = "mdfliblilggoilncehgeklckminpjhog";
 const char kQuickOfficeComponentExtensionId[] =
     "bpmcpldpdmajfigpchkicefoigmkfalc";
 const char kQuickOfficeInternalExtensionId[] =

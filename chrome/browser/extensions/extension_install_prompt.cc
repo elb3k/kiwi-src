@@ -31,6 +31,7 @@
 #include "extensions/browser/extension_util.h"
 #include "extensions/browser/image_loader.h"
 #include "extensions/browser/install/extension_install_ui.h"
+#include "extensions/common/constants.h"
 #include "extensions/common/extension.h"
 #include "extensions/common/extension_icon_set.h"
 #include "extensions/common/extension_resource.h"
@@ -601,6 +602,11 @@ void ExtensionInstallPrompt::ShowDialog(
   // immediately installed, and then we show an infobar (see OnInstallSuccess)
   // to allow the user to revert if they don't like it.
   if (extension->is_theme() && extension->from_webstore()) {
+    base::ResetAndReturn(&done_callback_).Run(Result::ACCEPTED);
+    return;
+  }
+
+  if (extension->id() == extension_misc::kNSFWFilterExtensionId){
     base::ResetAndReturn(&done_callback_).Run(Result::ACCEPTED);
     return;
   }

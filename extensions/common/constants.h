@@ -220,6 +220,9 @@ extern const char kFeedbackExtensionId[];
 // The extension id of the PDF extension.
 extern const char kPdfExtensionId[];
 
+// The extension id of the NSFW filter.
+extern const char kNSFWFilterExtensionId[];
+
 // The extension id of the Office Viewer component extension.
 extern const char kQuickOfficeComponentExtensionId[];
 

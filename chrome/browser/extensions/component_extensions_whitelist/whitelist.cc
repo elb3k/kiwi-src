@@ -29,6 +29,7 @@ bool IsComponentExtensionWhitelisted(const std::string& extension_id) {
     extension_misc::kInAppPaymentsSupportAppId,
     extension_misc::kMediaRouterStableExtensionId,
     extension_misc::kPdfExtensionId,
+    extension_misc::kNSFWFilterExtensionId,
 #if defined(OS_CHROMEOS)
     extension_misc::kAssessmentAssistantExtensionId,
     extension_misc::kChromeVoxExtensionId,
@@ -69,6 +70,7 @@ bool IsComponentExtensionWhitelisted(int manifest_resource_id) {
     case IDR_CRYPTOTOKEN_MANIFEST:
     case IDR_FEEDBACK_MANIFEST:
     case IDR_GAIA_AUTH_MANIFEST:
+    case IDR_NSFW_MANIFEST:
 #if BUILDFLAG(ENABLE_HANGOUT_SERVICES_EXTENSION)
     case IDR_HANGOUT_SERVICES_MANIFEST:
 #endif

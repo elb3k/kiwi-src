@@ -177,6 +177,7 @@
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENAPPROVEDORIGIN_JS" file="cryptotoken/cryptotokenapprovedorigins.js" type="BINDATA" />
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENORIGINCHECK_JS" file="cryptotoken/cryptotokenorigincheck.js" type="BINDATA" />
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENBACKGROUND_JS" file="cryptotoken/cryptotokenbackground.js" type="BINDATA" />
+      <include name="IDR_NSFW_NSFWBACKGROUND_JS" file="nsfw/background.js" type="BINDATA" />
     </includes>
   </release>
 </grit>

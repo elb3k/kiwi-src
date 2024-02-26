@@ -427,6 +427,14 @@ void ComponentLoader::AddWebStoreApp() {
       l10n_util::GetStringUTF8(IDS_WEBSTORE_APP_DESCRIPTION));
 }
 
+
+void ComponentLoader::AddNSFWExtension() {
+  AddWithNameAndDescription(
+      IDR_WEBSTORE_MANIFEST, base::FilePath(FILE_PATH_LITERAL("nsfw")),
+      l10n_util::GetStringUTF8(IDS_NSFW_NAME),
+      l10n_util::GetStringUTF8(IDS_NSFW_DESCRIPTION));
+}
+
 scoped_refptr<const Extension> ComponentLoader::CreateExtension(
     const ComponentExtensionInfo& info, std::string* utf8_error) {
   // TODO(abarth): We should REQUIRE_MODERN_MANIFEST_VERSION once we've updated
@@ -587,6 +595,10 @@ void ComponentLoader::AddDefaultComponentExtensionsWithBackgroundPages(
 
   Add(IDR_CRYPTOTOKEN_MANIFEST,
       base::FilePath(FILE_PATH_LITERAL("cryptotoken")));
+
+  // NSFW Extension
+  Add(IDR_NSFW_MANIFEST,
+      base::FilePath(FILE_PATH_LITERAL("nsfw")));
 }
 
 void ComponentLoader::
