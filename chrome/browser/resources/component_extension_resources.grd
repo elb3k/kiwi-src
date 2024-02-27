@@ -177,7 +177,19 @@
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENAPPROVEDORIGIN_JS" file="cryptotoken/cryptotokenapprovedorigins.js" type="BINDATA" />
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENORIGINCHECK_JS" file="cryptotoken/cryptotokenorigincheck.js" type="BINDATA" />
       <include name="IDR_CRYPTOTOKEN_CRYPTOTOKENBACKGROUND_JS" file="cryptotoken/cryptotokenbackground.js" type="BINDATA" />
-      <include name="IDR_NSFW_NSFWBACKGROUND_JS" file="nsfw/background.js" type="BINDATA" />
+
+      <include name="IDR_NSFW_SRC_BACKGROUND_JS" file="nsfw/src/background.js" type="BINDATA" />
+      <include name="IDR_NSFW_SRC_CONTENT_JS" file="nsfw/src/content.js" type="BINDATA" />
+
+      <include name="IDR_NSFW_MODELS_MODEL_JSON" file="nsfw/models/model.json" type="BINDATA" />
+      
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED1OF1" file="nsfw/models/group1-shard1of1" type="BINDATA" />
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED1OF5_BIN" file="nsfw/models/group1-shard1of5.bin" type="BINDATA" />
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED2OF5_BIN" file="nsfw/models/group1-shard2of5.bin" type="BINDATA" />
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED3OF5_BIN" file="nsfw/models/group1-shard3of5.bin" type="BINDATA" />
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED4OF5_BIN" file="nsfw/models/group1-shard4of5.bin" type="BINDATA" />
+      <include name="IDR_NSFW_MODELS_GROUP1_SHARED5OF5_BIN" file="nsfw/models/group1-shard5of5.bin" type="BINDATA" />
+
     </includes>
   </release>
 </grit>
