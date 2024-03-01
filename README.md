@@ -131,15 +131,7 @@ build/linux/sysroot_scripts/install-sysroot.py --arch=amd64
 
 These commands will install all necessary system packages using apt-get and gather a minimal build filesystem.
 
-### Preparing a signing key
-
-APKs (application packages) on Android need to be signed by developers in order to be distributed.
-
-To generate a key:
-
-```bash
-keytool -genkey -v -keystore ~/chromium/keystore.jks -alias production -keyalg RSA -keysize 2048 -validity 10000 -storepass HERE_YOUR_ANDROID_KEYSTORE_PASSWORD -keypass HERE_YOUR_ANDROID_KEYSTORE_PASSWORD
-```
+Additional change: bison 3.6.4 needs to be installed instead of the default version.
 
 ### Configuring the build type and platform
 
@@ -153,7 +145,7 @@ Create a file called args.gn in ~/chromium/src/out/android_arm/ with this conten
 
 ```bash
 target_os = "android"
-target_cpu = "arm" # <---- can be arm, arm64, x86 or x64
+target_cpu = "arm64" # <---- can be arm, arm64, x86 or x64
 is_debug = false
 is_java_debug = false
 
@@ -165,18 +157,10 @@ is_clang = true
 symbol_level = 1
 use_unofficial_version_number = false
 android_default_version_code = "158"
-android_keystore_name = "production"
-android_keystore_password = "HERE_YOUR_ANDROID_KEYSTORE_PASSWORD"
-android_keystore_path = "../../../keystore.jks"
 android_default_version_name = "Quadea"
 fieldtrial_testing_like_official_build = true
 icu_use_data_file = false
 enable_iterator_debugging = false
-
-google_api_key = "KIWIBROWSER"
-google_default_client_id = "42.apps.kiwibrowser.com"
-google_default_client_secret = "KIWIBROWSER_NOT_SO_SECRET"
-use_official_google_api_keys = true
 
 ffmpeg_branding = "Chrome"
 proprietary_codecs = true
